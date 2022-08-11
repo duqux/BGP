@@ -1,0 +1,94 @@
+-------------------------------------------------------------------------------
+Test set: Testrunner.Testrunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 170.596 sec <<< FAILURE!
+TC005_ContactDetails(Verify if the letter of offer addressee auto populates correctly #1)  Time elapsed: 32.593 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //span[contains(text(),'Contact Details') and @class='menu-text'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-HJ3UH3A', ip: '192.168.1.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ECQ985\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54796}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54796/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d53d4b62366f2accf16597f0ed477a3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Modules.Commons.clickOnSection(Commons.java:136)
+	at Stepdefinition.CommonStepDefinition.i_click_on_section_tab(CommonStepDefinition.java:29)
+	at ✽.I click on "Contact Details" section tab(file:///C:/Users/ECQ985/IdeaProjects/BGP%20Assignment/src/test/java/Features/ContactDetails/TC005_ContactDetails.feature:7)
+
+TC007_ContactDetails(Verification of the Save draft function #1)  Time elapsed: 12.243 sec  <<< ERROR!
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=103.0.5060.134): {Alert text : 
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-HJ3UH3A', ip: '192.168.1.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a8e3180c5ab5910938a8a2b51af0ad19, findElement {using=xpath, value=//input[@id='react-contact_info-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ECQ985\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54886}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54886/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a8e3180c5ab5910938a8a2b51af0ad19
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at Modules.ContactDetails.checkPersonDetails(ContactDetails.java:114)
+	at Stepdefinition.ContactDetailsStepDefinition.i_check_on_the_main_contact_details(ContactDetailsStepDefinition.java:45)
+	at ✽.I check on the main contact details(file:///C:/Users/ECQ985/IdeaProjects/BGP%20Assignment/src/test/java/Features/ContactDetails/TC007_ContactDetails.feature:12)
+
+TC008_ContactDetails(Verification of the Save draft function #2)  Time elapsed: 32.472 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //span[contains(text(),'Contact Details') and @class='menu-text'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-HJ3UH3A', ip: '192.168.1.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ECQ985\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54927/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af661bf5c458bf2f526e88aae975c7e5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Modules.Commons.clickOnSection(Commons.java:136)
+	at Stepdefinition.CommonStepDefinition.i_click_on_section_tab(CommonStepDefinition.java:29)
+	at ✽.I click on "Contact Details" section tab(file:///C:/Users/ECQ985/IdeaProjects/BGP%20Assignment/src/test/java/Features/ContactDetails/TC008_ContactDetails.feature:7)
+
+TC009_ContactDetails(Verification of the Save draft function #3)  Time elapsed: 32.471 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //span[contains(text(),'Contact Details') and @class='menu-text'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-HJ3UH3A', ip: '192.168.1.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ECQ985\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54980/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 269f13be98f1837dc76a84630281357e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Modules.Commons.clickOnSection(Commons.java:136)
+	at Stepdefinition.CommonStepDefinition.i_click_on_section_tab(CommonStepDefinition.java:29)
+	at ✽.I click on "Contact Details" section tab(file:///C:/Users/ECQ985/IdeaProjects/BGP%20Assignment/src/test/java/Features/ContactDetails/TC009_ContactDetails.feature:7)
+
+TC010_ContactDetails(Verification of the Save draft function #4)  Time elapsed: 11.368 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='react-contact_info-name']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-HJ3UH3A', ip: '192.168.1.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcc561691fa5c0040f73b521acbcb040, findElement {using=xpath, value=//input[@id='react-contact_info-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ECQ985\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55029}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55029/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bcc561691fa5c0040f73b521acbcb040
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at Modules.ContactDetails.checkPersonDetails(ContactDetails.java:114)
+	at Stepdefinition.ContactDetailsStepDefinition.i_check_on_the_main_contact_details(ContactDetailsStepDefinition.java:45)
+	at ✽.I check on the main contact details(file:///C:/Users/ECQ985/IdeaProjects/BGP%20Assignment/src/test/java/Features/ContactDetails/TC010_ContactDetails.feature:12)
+
